@@ -49,7 +49,7 @@
           const inlist = localStorage.getItem("list");
 
 
-
+          if(inlist!=null){
             // const dummmylist=list.split(",");
             const list=JSON.parse(inlist);
             // alert(typeof(list));
@@ -86,7 +86,7 @@
 
               }
             });
-            if(cnt!=null){
+            
               this.setState({ count: parseInt(cnt), list1: [...list] });
           }
           window.addEventListener("beforeunload", () => {
