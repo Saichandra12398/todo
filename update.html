@@ -50,15 +50,14 @@
 
 
 
-            var cnt = localStorage.getItem("count");
-          const inlist = localStorage.getItem("list");
+          //   var cnt = localStorage.getItem("count");
+          // const inlist = localStorage.getItem("list");
 
 
 
-            // const dummmylist=list.split(",");
-            const list=JSON.parse(inlist);
-            // alert(typeof(list));
-            list.map((ele,index)=>{
+          //   const list=JSON.parse(inlist);
+          //   // alert(typeof(list));
+          //   list.map((ele,index)=>{
 
 
                 
@@ -66,13 +65,16 @@
           const lii=JSON.parse(newli);
           // alert(typeof(lii));
           lii.map((ele,index) => {alert(ele.task)});
+
+
+
           this.setState({li:[...lii]});
           // alert()
 
           window.addEventListener("beforeunload", () => {
 
 
-            localStorage.setItem("list", JSON.stringify(this.state.li));
+            // localStorage.setItem("list", JSON.stringify(this.state.li));
           });
         }
 
